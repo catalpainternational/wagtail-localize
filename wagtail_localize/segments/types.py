@@ -83,6 +83,9 @@ class StringSegmentValue(BaseValue):
         if isinstance(string, str):
             string = StringValue.from_plaintext(string)
 
+        elif string is None:
+            pass
+
         elif isinstance(string, StringValue):
             pass
 
