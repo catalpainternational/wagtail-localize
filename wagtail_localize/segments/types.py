@@ -84,7 +84,7 @@ class StringSegmentValue(BaseValue):
             string = StringValue.from_plaintext(string)
 
         elif string is None:
-            pass
+            string = ""
 
         elif isinstance(string, StringValue):
             pass
